@@ -1,0 +1,81 @@
+{
+  "Type": "Node",
+  "Id": "LouisGSiteScreenshot",
+  "Steps": [
+    {
+      "Type": "Text",
+      "Label": {
+        "en": "Hey buddy, could you help me?",
+        "fr": "TBD",
+        "es": "TBD"
+      }
+    }
+  ],
+  "Commands": [
+    {
+      "Type": "Node",
+      "Id": "yesLouisGSite",
+      "ElementValue": "1",
+      "CommandLabel": {
+        "en": "yes 😊",
+        "fr": "oui 😊",
+        "es": "sí 😊"
+      },
+      "Steps": [
+        {
+          "Type": "Image",
+          "Parameters": {
+            "Source": "Web",
+            "Path": "http://res.cloudinary.com/dto1zpi0d/image/upload/v1520513001/8909370916894.jpg"
+          }
+        },
+        {
+          "Type": "Text",
+          "Label": {
+            "en": "Where do you think this place is?",
+            "fr": "TBD",
+            "es": "TBD"
+          }
+        }
+      ],
+      "LinksTo": {
+        "Type": "Node",
+        "Id": "CountriesLouisGSite",
+        "ElementValue": "1",
+        "Commands": [
+          {
+            "Type": "Leaf",
+            "Id": "ItalyLouisGSite",
+            "ElementValue": "1",
+            "CommandLabel": {
+              "en": "Italy",
+              "fr": "oui 🤖",
+              "es": "sí 🤖"
+            }
+          },
+          {
+            "Type": "Leaf",
+            "Id": "GreeceLouisGSite",
+            "ElementValue": "1",
+            "CommandLabel": {
+              "en": "Greece",
+              "fr": "oui 🤖",
+              "es": "sí 🤖"
+            }
+          },
+          {
+            "Type": "Leaf",
+            "Id": "CroatiaLouisGSite",
+            "ElementValue": "1",
+            "CommandLabel": {
+              "en": "Croatia",
+              "fr": "oui 🤖",
+              "es": "sí 🤖"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+            
